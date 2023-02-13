@@ -2,12 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { getCoins } from '../redux/AllCoins/coinSlice';
-// import Coin from './Coin';
 
 const CoinsList = () => {
   const dispatch = useDispatch();
   const coins = useSelector((state) => state.coins.coinsData);
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
     if (coins.length === 0) {
@@ -19,7 +18,11 @@ const CoinsList = () => {
     setSearch(e.target.value);
   };
 
-  const searchedCoin = coins.filter((coin) => coin.name.toLowerCase().match(search.toLowerCase()));
+  const searchedCoin = coins.filter(
+    (coin) =>
+      coin.name.toLowerCase().match(search.toLowerCase()) ||
+      coin.symbol.toLowerCase().match(search.toLowerCase())
+  );
 
   return (
     <div>
@@ -35,10 +38,7 @@ const CoinsList = () => {
             <div>
               <img src={coin.icon} alt="coin icon" />
               <h2>{coin.name}</h2>
-              <p>
-                {(coin.price / 1000).toFixed(1)}
-                K
-              </p>
+              <p>{(coin.price / 1000).toFixed(1)}K</p>
             </div>
           </Link>
         ))}
