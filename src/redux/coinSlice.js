@@ -1,9 +1,8 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import fetchCoins from './FetchCoinsAPI';
 
 export const getCoins = createAsyncThunk('coins/fetchCoins', async () => {
-  const coinLists = await fetchCoins();
-  const { coins } = coinLists;
+  const response = await fetch('https://api.coinstats.app/public/v1/coins');
+  const { coins } = await response.json();
   return coins;
 });
 
@@ -19,13 +18,13 @@ const coinSlice = createSlice({
       return newState;
     });
     builder.addCase(getCoins.fulfilled, (state, action) => {
-      const newState = { ...state, coinsData: [], error: action.error.message };
+      const newState = { ...state, coinsData: action.payload, loading: false };
       return newState;
     });
     builder.addCase(getCoins.rejected, (state, action) => {
       const newState = {
         ...state,
-        missionData: [],
+        coinsData: [],
         error: action.error.message,
       };
       return newState;

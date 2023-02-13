@@ -1,28 +1,86 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getCoins } from '../redux/AllCoins/coinSlice';
-import Coin from './Coin';
-const CoinsList = () => {
+import { useParams } from 'react-router-dom';
+import { getCoinDetails } from '../redux/coinDetailsSlice';
+import '../styles/coinDetails.css';
+import '../styles/spinner.css';
+
+const CoinDetails = () => {
   const dispatch = useDispatch();
-  const coins = useSelector((state) => state.coins.coinsData);
+  const params = useParams();
+  const coinsData = useSelector((state) => state.details);
+  const { loading, coinDetails } = coinsData;
+
   useEffect(() => {
-    if (coins.length === 0) {
-      dispatch(getCoins());
-    }
-  }, [dispatch, coins.length]);
+    dispatch(getCoinDetails(params.id));
+  }, [dispatch, params.id]);
+
+  if (loading) {
+    return <div className="loader" />;
+  }
+
   return (
-    <ul>
-      {coins.map((coin) => (
-        <li key={coin.id}>
-          <Coin
-            id={coin.id}
-            icon={coin.icon}
-            name={coin.name}
-            price={coin.price}
-          />
-        </li>
-      ))}
-    </ul>
+    <div className="coin-details">
+      <div className="hero">
+        <img src={coinDetails.icon} alt="coin-icon" />
+        <h2>{coinDetails.name}</h2>
+      </div>
+      <div className="details">
+        <h2>
+          {coinDetails.name}
+          {' '}
+          Details:
+        </h2>
+        <ul>
+          <li>
+            <span>Name</span>
+            <span>{coinDetails.name}</span>
+          </li>
+          <li>
+            <span>Symbol</span>
+            <span>{coinDetails.symbol}</span>
+          </li>
+          <li>
+            <span>Rank</span>
+            <span>{coinDetails.rank}</span>
+          </li>
+          <li>
+            <span>Price to USD</span>
+            <span>
+              {' $'}
+              {coinDetails.price < 1000
+                ? coinDetails.price.toFixed(2)
+                : (coinDetails.price / 1000).toFixed(1)}
+              {coinDetails.price > 1000 ? 'K' : ''}
+            </span>
+          </li>
+          <li>
+            <span>Daily Change</span>
+            <span>
+              {coinDetails.priceChange1d}
+              %
+            </span>
+          </li>
+          <li>
+            <span>Volume</span>
+            <span>
+              $
+              {(coinDetails.volume / 1000000000).toFixed(1)}
+              B
+            </span>
+          </li>
+          <li>
+            <span>Market Cap</span>
+            <span>
+              $
+              {(coinDetails.marketCap / 1000000000).toFixed(1)}
+              B
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
   );
 };
-export default CoinsList;
+
+export default CoinDetails;
