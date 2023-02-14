@@ -65,7 +65,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo]()
+- [Live Demo](https://www.loom.com/share/5fdef895c2cf4d1c9dcd2f9801ffc6f1)
 
 ## 🚀 Project presentation <a name="presentation"></a>
 
