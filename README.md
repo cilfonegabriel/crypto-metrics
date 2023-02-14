@@ -13,27 +13,28 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
-- [📝 License](#license)
-
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Crypto Coin Metrics ](#-crypto-coin-metrics-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+  - [👥 Author ](#-author-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 Crypto Metrics <a name="about-project"></a>
-**Crypto Metrics** is a mobile web application that uses [CoinStats API](https://cryptocointracker.com/api/coinstats) to display the list of cryptocurrencies and their market capitalization. Built with React and Redux.
+**Crypto Metrics** is a functional mobile web application that uses [CoinStats API](https://cryptocointracker.com/api/coinstats) to obtain and display a list of cryptocurrencies and their market capitalization. It is developed with react and redux.
 <div align="center">
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -53,9 +54,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Home Page displays a list of all cryptcurrencies**
+- **Home Page showing a list of all cryptcurrencies coins**
+- **Information of each crypto currency is displayed by clicking on the card on home page**
 - **User can search any cryptocurrency from the list**
-- **Detail of each currency is displayed by clicking on the card on home page**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -63,7 +64,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](https://incandescent-crepe-9d449b.netlify.app)
+- [Live Demo]()
 
 
 > Describe between 1-3 key features of the application.
@@ -138,9 +139,9 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Cryptocurrency search can be done by price, market cap, or ranking etc.**
-- **"Show more" button feature for the cryptocurrency list can be added in the Home Page**
-- **Error page can be displayed on API failure**
+- **Crypto price projection shown as a dashboard**
+- **Display of volume of crypto exchanges from different geographical region**
+- **Reveal more feature details for the cryptocurrency**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -166,7 +167,7 @@ If you like this project please leave us a star
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
+CREDIT: Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

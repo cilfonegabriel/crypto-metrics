@@ -53,8 +53,7 @@
 }
 
 .coin-card:hover {
-  width: 130px;
-  height: 200px;
+  background-color: #4379ab;
 }
 
 .coin-logo {
