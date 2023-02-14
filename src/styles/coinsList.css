@@ -49,6 +49,12 @@
   background-color: var(--light-blue);
   border-radius: 10px;
   max-width: 180px;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.coin-card:hover {
+  width: 130px;
+  height: 200px;
 }
 
 .coin-logo {
