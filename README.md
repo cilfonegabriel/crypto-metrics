@@ -19,6 +19,7 @@
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
+  - [🚀 Project presentation ](#-project-presentation-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -65,6 +66,8 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo]()
+
+## 🚀 Project presentation <a name="presentation"></a>
 
 
 > Describe between 1-3 key features of the application.
