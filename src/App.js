@@ -4,7 +4,6 @@ import CoinsList from './components/CoinsList';
 import CoinDetails from './components/CoinDetails';
 import Header from './components/Header';
 
-
 const App = () => (
   <Router>
     <Header />
