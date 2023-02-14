@@ -5,8 +5,7 @@ import { getCoins } from '../redux/coinSlice';
 import banner from '../assets/crypto-fin.jpg';
 import searchIcon from '../assets/find.svg';
 import '../styles/coinsList.css';
-import '../styles/spinner.css';
-// import Coin from './Coin';
+import '../styles/loader.css';
 
 const CoinsList = () => {
   const dispatch = useDispatch();

@@ -2,8 +2,9 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { getCoinDetails } from '../redux/coinDetailsSlice';
-import '../styles/coinDetails.css';
-import '../styles/spinner.css';
+import '../styles/coinInfo.css';
+import '../styles/loader.css';
+
 
 const CoinDetails = () => {
   const dispatch = useDispatch();
