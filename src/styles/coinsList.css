@@ -51,8 +51,20 @@
   transition: width 2s, height 2s, transform 2s;
 }
 
-.coin-card:hover {
-  background-color: #4379ab;
+a:nth-child(n) {
+  background-color: #11162e;
+}
+
+a:nth-child(2n) {
+  background-color: var(--light-blue);
+}
+
+a:nth-child(3n) {
+  background-color: #181b2c;
+}
+
+a:nth-child(4n) {
+  background-color: #050c35;
 }
 
 .coin-logo {
