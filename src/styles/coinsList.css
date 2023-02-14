@@ -46,7 +46,6 @@
   align-items: center;
   gap: 1em;
   padding: 1.2em;
-  background-color: var(--light-blue);
   border-radius: 10px;
   max-width: 180px;
   transition: width 2s, height 2s, transform 2s;
