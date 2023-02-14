@@ -10,7 +10,7 @@ const Header = () => (
       <Link to="/">
         <img src={back} alt="back" />
       </Link>
-      <h1>Cryptocurrency</h1>
+      <h1>CryptoCoinStats</h1>
     </div>
     <img src={menu} alt="menu" />
   </header>

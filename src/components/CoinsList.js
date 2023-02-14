@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { getCoins } from '../redux/coinSlice';
-import banner from '../assets/banner.jpg';
+import banner from '../assets/crypto-fin.jpg';
 import searchIcon from '../assets/find.svg';
 import '../styles/coinsList.css';
 import '../styles/spinner.css';
@@ -41,7 +41,7 @@ const CoinsList = () => {
         <img src={searchIcon} alt="search icon" />
         <input
           type="search"
-          placeholder="Search cryptocurrency"
+          placeholder="Search Crypto Coin"
           onChange={handleChange}
           value={search}
         />
