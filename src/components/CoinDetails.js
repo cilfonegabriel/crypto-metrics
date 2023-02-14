@@ -5,7 +5,6 @@ import { getCoinDetails } from '../redux/coinDetailsSlice';
 import '../styles/coinInfo.css';
 import '../styles/loader.css';
 
-
 const CoinDetails = () => {
   const dispatch = useDispatch();
   const params = useParams();
