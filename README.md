@@ -65,10 +65,11 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](https://www.loom.com/share/5fdef895c2cf4d1c9dcd2f9801ffc6f1)
+- [Live Demo](https://cripto-metrics.onrender.com/)
 
 ## 🚀 Project presentation <a name="presentation"></a>
 
+https://www.loom.com/share/5fdef895c2cf4d1c9dcd2f9801ffc6f1
 
 > Describe between 1-3 key features of the application.
 - **[My Profile section]**
