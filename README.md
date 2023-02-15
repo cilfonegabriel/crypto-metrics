@@ -52,7 +52,6 @@
 
 <!-- Features -->
 
-
 ### Key Features <a name="key-features"></a>
 
 - **Home Page showing a list of all cryptcurrencies coins**
